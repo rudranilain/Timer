@@ -1,0 +1,53 @@
+
+
+<html>
+    <head>
+        <title>countdown</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="div"></div>
+        <h1 id="h1">Timer</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th class="th">Enter date</th>
+                    <th class="th">Enter time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="date" id="enddate"></td>
+                    &nbsp;&nbsp;&nbsp;
+                    <td><input type="time" id="endtime"></td>
+                </tr>
+            </tbody>
+            <br><br>
+        </table>
+        <br><br><br>
+        <button onclick="calculate()" class="b">Start</button>
+        <button class="b" onclick="reset()">Reset</button>
+        <button id="sb" onclick="stop()">Stop</button>
+        <br><br> <br><br>
+        <div class="c">
+            <div>
+                <p class="h">Day</p>
+                <div class="t" id="day">0</div>
+            </div>
+            <div>
+                <p class="h">hours</p>
+                <div class="t" id="hours">0</div>
+            </div>
+            <div>
+                <p class="h">minutes</p>
+                <div class="t" id="minutes">0</div>
+            </div>
+            <div>
+                <p class="h">seconds</p>
+                <div class="t" id="seconds">0</div>
+            </div>
+        </div>
+        <audio id="audio" src="alarm.wav"></audio>
+    </body>
+    <script src="script.js"></script>
+</html>
